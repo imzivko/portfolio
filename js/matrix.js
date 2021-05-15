@@ -7,7 +7,7 @@ c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
 let matrix =
-  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+  "01";
 //converting the string into an array of single characters
 matrix = matrix.split("");
 
