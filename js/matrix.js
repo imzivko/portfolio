@@ -1,3 +1,5 @@
+"use-strict";
+
 const c = document.getElementById("c");
 const ctx = c.getContext("2d");
 
@@ -5,13 +7,12 @@ const ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-//chinese characters - taken from the unicode charset
-let matrix =
-  "01";
+// characters that are used for matrix effect
+let matrix = "01";
 //converting the string into an array of single characters
 matrix = matrix.split("");
 
-const font_size = 10;
+const font_size = 15;
 const columns = c.width / font_size; //number of columns for the rain
 //an array of drops - one per column
 const drops = [];
