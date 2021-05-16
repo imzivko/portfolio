@@ -20,7 +20,7 @@ const drops = [];
 //1 = y co-ordinate of the drop(same for every drop initially)
 for (let x = 0; x < columns; x++) drops[x] = 1;
 
-//drawing the characters
+//drawing characters
 function draw() {
   //Black BG for the canvas
   //translucent BG to show trail
