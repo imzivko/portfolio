@@ -31,7 +31,7 @@ function draw() {
   ctx.font = font_size + "px arial";
   //looping over drops
   for (let i = 0; i < drops.length; i++) {
-    //a random chinese character to print
+    //a random character to print
     const text = matrix[Math.floor(Math.random() * matrix.length)];
     //x = i*font_size, y = value of drops[i]*font_size
     ctx.fillText(text, i * font_size, drops[i] * font_size);
