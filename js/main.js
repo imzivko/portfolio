@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 
 const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
@@ -26,7 +26,7 @@ about.addEventListener("click", () => {
 });
 
 projects.addEventListener("click", () => {
-  const contactBox = new WinBox({
+  const projectsBox = new WinBox({
     title: "My Projects",
     modal: window.mobileCheck() ? true : false,
     width: window.mobileCheck() ? "90%" : "30%",

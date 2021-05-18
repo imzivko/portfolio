@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 
 const c = document.getElementById("c");
 const ctx = c.getContext("2d");
@@ -20,7 +20,7 @@ const drops = [];
 //1 = y co-ordinate of the drop(same for every drop initially)
 for (let x = 0; x < columns; x++) drops[x] = 1;
 
-//drawing characters
+//drawing the characters
 function draw() {
   //Black BG for the canvas
   //translucent BG to show trail
@@ -31,7 +31,7 @@ function draw() {
   ctx.font = font_size + "px arial";
   //looping over drops
   for (let i = 0; i < drops.length; i++) {
-    //a random character to print
+    //a random chinese character to print
     const text = matrix[Math.floor(Math.random() * matrix.length)];
     //x = i*font_size, y = value of drops[i]*font_size
     ctx.fillText(text, i * font_size, drops[i] * font_size);
