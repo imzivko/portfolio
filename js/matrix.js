@@ -12,7 +12,7 @@ let matrix = "01";
 //converting the string into an array of single characters
 matrix = matrix.split("");
 
-const font_size = 15;
+const font_size = 10;
 const columns = c.width / font_size; //number of columns for the rain
 //an array of drops - one per column
 const drops = [];
@@ -28,7 +28,7 @@ function draw() {
   ctx.fillRect(0, 0, c.width, c.height);
 
   ctx.fillStyle = "#008f00"; //green text
-  ctx.font = font_size + "px arial";
+  ctx.font = font_size + "px roboto mono";
   //looping over drops
   for (let i = 0; i < drops.length; i++) {
     //a random chinese character to print
