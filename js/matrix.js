@@ -1,3 +1,5 @@
+// Simple matrix rain effect for website background
+
 "use strict";
 
 const c = document.getElementById("c");

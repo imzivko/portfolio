@@ -7,12 +7,13 @@ const aboutContent = document.querySelector("#about-content");
 const contactContent = document.querySelector("#contact-content");
 const projectsContent = document.querySelector("#projects-content");
 
+// About WinBox Window
 about.addEventListener("click", () => {
   const aboutBox = new WinBox({
     title: "About Me",
     modal: window.mobileCheck() ? true : false,
     width: window.mobileCheck() ? "90%" : "30%",
-    height: window.mobileCheck() ? "40%" : "30%",
+    height: window.mobileCheck() ? "50%" : "30%",
     x: window.mobileCheck() ? "center" : "4%",
     y: window.mobileCheck() ? "center" : "4%",
     mount: aboutContent,
@@ -25,6 +26,7 @@ about.addEventListener("click", () => {
   });
 });
 
+// Projects WinBox Window
 projects.addEventListener("click", () => {
   const projectsBox = new WinBox({
     title: "My Projects",
@@ -43,6 +45,7 @@ projects.addEventListener("click", () => {
   });
 });
 
+// Contact WinBox Window
 contact.addEventListener("click", () => {
   const contactBox = new WinBox({
     title: "Contact Me",

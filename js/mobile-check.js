@@ -1,3 +1,5 @@
+// Checks if the user is on mobile
+// Added this solely for making WinBox windows mobile responive easier with javascript. (See main.js ternary operators)
 window.mobileCheck = function () {
   let check = false;
   (function (a) {
