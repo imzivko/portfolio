@@ -13,7 +13,7 @@ about.addEventListener("click", () => {
     title: "About Me",
     modal: window.mobileCheck() ? true : false,
     width: window.mobileCheck() ? "90%" : "30%",
-    height: window.mobileCheck() ? "50%" : "30%",
+    height: window.mobileCheck() ? "90%" : "70%",
     x: window.mobileCheck() ? "center" : "4%",
     y: window.mobileCheck() ? "center" : "4%",
     mount: aboutContent,
