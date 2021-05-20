@@ -7,7 +7,7 @@ const ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-// characters that are used for matrix effect
+// characters that are used
 let matrix = "01";
 //converting the string into an array of single characters
 matrix = matrix.split("");
@@ -31,7 +31,7 @@ function draw() {
   ctx.font = font_size + "px roboto mono";
   //looping over drops
   for (let i = 0; i < drops.length; i++) {
-    //a random chinese character to print
+    //a random character to print
     const text = matrix[Math.floor(Math.random() * matrix.length)];
     //x = i*font_size, y = value of drops[i]*font_size
     ctx.fillText(text, i * font_size, drops[i] * font_size);
