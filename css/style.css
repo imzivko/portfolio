@@ -8,6 +8,7 @@
 
 :root {
   --text-color: #00aa00;
+  --fonts: "Roboto Mono", sans-serif;
 }
 
 canvas {
@@ -15,11 +16,11 @@ canvas {
   position: fixed;
   z-index: -1;
   opacity: 0.5;
-  font-family: "Roboto Mona", sans-serif;
+  font-family: var(--fonts);
 }
 
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: var(--fonts);
   background-color: rgb(26, 26, 26);
   color: #ccc;
   font-size: 18px;
