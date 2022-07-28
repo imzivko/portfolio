@@ -7,7 +7,7 @@ const aboutContent = document.querySelector("#about-content");
 const contactContent = document.querySelector("#contact-content");
 const projectsContent = document.querySelector("#projects-content");
 
-// display current age dynamically
+// current age IIFE
 (function() {
 	setInterval(function() {
     const currentDate = new Date;
