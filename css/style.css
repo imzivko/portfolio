@@ -44,6 +44,9 @@ h3 {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 a {
@@ -74,17 +77,15 @@ nav ul li {
 .container {
   max-width: 600px;
   margin: auto;
-  height: 70vh;
+  height: 100svh;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* text-align: center; */
 }
 
-.wb-body {
-  background: #111;
-  padding: 20px;
-}
 
 .hidden {
   display: none;
@@ -107,4 +108,5 @@ nav ul li {
 
 .age {
   color: var(--text-color);
+  font-weight: 700;
 }
